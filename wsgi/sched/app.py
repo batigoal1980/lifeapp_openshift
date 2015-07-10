@@ -13,7 +13,7 @@ from sched.forms import AppointmentForm, LoginForm
 from sched.models import Appointment, Base, User
 
 
-app = Flask('sched')
+app = Flask(__name__)
 app.config.from_object(config)
 
 
